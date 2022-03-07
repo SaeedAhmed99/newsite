@@ -1,0 +1,461 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+::-webkit-scrollbar{
+    width: .7em;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000000;
+    margin-block:.5em ;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: .4em;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #868686;
+}
+
+body {
+    background-color: #131213 !important;
+    /* font-family: Roboto Slab !important;
+    top: 0;
+    left: 0; */
+}
+
+
+
+/* Start Navebar */
+
+.header {
+    background-size: cover;
+    height: 100vh;
+}
+
+.header .carousel-inner .carousel-item{
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    transition: .1s;
+}
+
+.header .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.navigation {
+    height: 10vh;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.navbar .messages .inbox {
+    margin-right: 15px;
+}
+
+.navbar .inbox .fa-envelope{
+    font-size: x-large;
+    color: #d9d9d9;
+}
+
+
+.navbar .navbar-toggler{
+    border: none;
+    /* margin-left: 5px; */
+    /* padding: 10px 30px; */
+    outline: none;
+    background-color: transparent;
+}
+
+.navbar .navbar-toggler:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    border: 1px;
+    background-color: #d9d9d9;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-collapse{
+        background-color: #000;
+        color: #131213;
+        padding: 5px 10px;
+    }
+}
+
+.navbar .navbar-collapse ul {
+    /* margin: 0 auto; */
+    padding-right: 30px;
+    margin-left: 45px;
+} 
+
+@media (max-width: 768px) {
+    .navbar .navbar-collapse ul {
+        padding: 5px 10px;
+        margin-left: 10px;
+    }
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+    margin: 0 20px;
+}
+
+@media (max-width:1100px) {
+.navbar .navbar-collapse .navbar-nav .nav-item {
+    margin: 0 10px;
+    }
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item a {
+    color: #C9C9C9;
+    font-size: large;
+    transition: .7s;
+    position: relative;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .active {
+    color: #D4AF37;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .active::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #D4AF37 !important;
+    left: 0;
+    top: 100%;
+    transition: .8s;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #D4AF37;
+    left: 0;
+    top: 100%;
+    transition: .8s;
+}
+
+@media (max-width:992px) {
+    .navbar .navbar-collapse .navbar-nav .nav-item a::after {
+        background-color: transparent;
+    }
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item a:hover::after {
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    color: #D4AF37 !important;
+}
+
+.navbar .navbar-collapse button {
+    color: #C9C9C9;
+    border: #C9C9C9 1px solid;
+    transition: .7s;
+    margin-right: 60px;
+}
+
+.navbar .navbar-collapse button:hover {
+    background-color: #C9C9C9;
+    color: #000;
+}
+
+.navbar .navbar-collapse button:hover a{
+    color: #000;
+}
+
+.navbar .navbar-collapse button a{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+@media (max-width:992px) {
+    .navbar .navbar-collapse button{
+        margin-right: 40px;
+    }
+}
+
+/* End Navnar */
+
+
+/* Start Signin */
+.log .container {
+    width: 50%;
+    background-color: #232123;
+    padding: 10px 0px 30px;
+    margin-top: 80px;
+    margin-bottom: 65px;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .log .container {
+        width: 85%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:992px) {
+    .log .container {
+    width: 70%;
+}
+    }
+
+.log .container .row {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .log .container .row {
+        width: 70%;
+    }
+}
+
+.log .container .row .btn {
+    color: #D9D9D9;
+    padding: 5px 0;
+    font-size: larger;
+}
+
+@media (max-width: 768px) {
+    .log .container .row .btn {
+        font-size: large;
+    }
+}
+
+.log .container form p {
+    color: #131213;
+    text-align: center;
+    background-color: #D4AF37;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: large;
+}
+
+.log .container form .input-group {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container form .input-group input {
+    background-color: transparent;
+    color: #D9D9D9;
+}
+
+.container form .input-group input:focus {
+    box-shadow: none;
+    outline: none;
+    border: #D9D9D9 solid 1px;
+    color: #D9D9D9;
+}
+
+
+
+.log .remmber{
+    display: flex;
+    justify-content: space-between;
+}
+
+.log .remmber .form-check label{
+    color:#D9D9D9 ;
+}
+
+.log .remmber .form-check input:focus{
+    background-color: #D4AF37;
+    outline: none;
+    box-shadow: none;
+}
+
+.log .remmber span a{
+    text-decoration: none;
+    color: #D4AF37;
+}
+
+.container form .btn {
+    color: #D4AF37;
+    background-color: #131213;
+    padding: 10px 20px;
+    width: 75%;
+    margin: 0 auto;
+    font-size: larger;
+}
+
+/* End Signin */
+
+/* Start Createuser */
+.signup {
+    width: 50%;
+    background-color: #232123;
+    padding: 20px 0px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .signup {
+        width: 90%;
+        margin-top: 40px;
+    }
+}
+
+.signup .container .row {
+    width: 50%;
+    margin: 0 auto;
+}
+@media (max-width: 1180px) {
+    .signup  {
+        width: 70%;
+    }
+}
+@media (max-width: 768px) {
+    .signup .container .row {
+        width: 90%;
+    }
+    .signup .container .row .btn{
+        width: 100%;
+    }
+}
+
+.signup .container .row .btn {
+    color: #D9D9D9;
+    padding: 5px 0;
+    font-size: larger;
+}
+
+@media (max-width: 768px) {
+    .signup .container .row .btn {
+        font-size: large;
+    }
+}
+
+.signup .container .row .sign {
+    border-bottom: 3px #D4AF37 solid;
+    border-radius: 0;
+
+}
+.signup .container .row  .signCustomer {
+    border-bottom: 3px #D4AF37 solid;
+    width: 26%;
+    margin: 0 auto;
+    border-radius: 0;
+
+}
+
+.signup .container form .input-group {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.signup .container form .input-group input {
+    background-color: transparent;
+    
+}
+
+
+.signup .container form .input-group input:focus {
+    box-shadow: none;
+    outline: none;
+    border: #D9D9D9 solid 1px;
+    color: #D9D9D9;
+}
+.signup .container form .sel{
+    width: 75%;
+    margin: 0 auto; 
+}
+.signup .container form .sel label{
+    color: #d9d9d9;
+    margin-bottom: 10px;
+    font-size: small;
+}
+.signup .container form select {
+    background-color: transparent;
+    color: #707070;
+}
+
+.signup .container form select option {
+    color: #131213;
+}
+
+.signup .container form button {
+    color: #D4AF37;
+    background-color: #131213;
+    padding: 10px 20px;
+    width: 75%;
+    margin: 0 auto;
+    font-size: larger;
+}
+/* End Createuser */
+
+.users {
+    width: 70%;
+    margin: 60px auto;
+}
+
+/* edit profile */
+.editProfile{
+    width: 60%;
+    margin: 60px auto;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    padding: 30px 0px;
+}
+@media (max-width:992px) {
+    .editProfile{
+        width: 70%;
+    }
+}
+@media (max-width:768px) {
+    .editProfile{
+        width: 80%;
+    }
+}
+
+.editProfile  form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.editProfile form a{
+    text-decoration: none;
+    color: #C79E17;
+}
+.editProfile form input:focus{
+box-shadow: none;
+border-color: transparent;
+}
+.editProfile .form{
+    width: 100%;
+    display: none;
+}
